@@ -94,11 +94,11 @@ nav ul {
     display: inline-block;
 }
 
-.main-img {
+/* .main-img {
     display: block;
     margin-left: auto;
     margin-right: auto;
-}
+} */
 
 .box-line {
     display: block;
@@ -516,10 +516,20 @@ h2 {
     position: relative;
     max-width: 100%;
     display: flex;
-    justify-content: center;
 }
 
 .img img.hovering {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    object-fit: contain;
+    opacity: 0;
+    transition: opacity .2s;
+}
+
+.first-box.hovering {
     position: absolute;
     top: 0;
     right: 0;
